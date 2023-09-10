@@ -3,5 +3,11 @@
   "compilerOptions": {
     "strict": true,
     "allowJs": false,
+    "compilerOptions": {
+      "paths": {
+        "@firebase/custom-auth": ["./node_modules/@firebase/auth/dist/index.rn.d.ts"]
+      }
+    },
+    "extends": "expo/tsconfig.base"
   }
 }

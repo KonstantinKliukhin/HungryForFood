@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "RNBooking",
-    "slug": "RNBooking",
+    "name": "HungryForMeal",
+    "slug": "hungry-for-meal",
     "version": "0.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/favicon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/favicon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -15,16 +15,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kliukhin.konstantin.hungryformeal"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/favicon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.kliukhin_konstantin.hungryformeal"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ba1db5fe-a080-4b43-8db1-e30506ab8eb6"
+      }
+    },
+    "owner": "kliukhin_konstantin"
   }
 }
