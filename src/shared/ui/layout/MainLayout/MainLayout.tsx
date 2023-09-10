@@ -11,10 +11,7 @@ type PropsType = {
 export const MainLayout: FC<PropsType> = (props) => {
   return (
     <>
-      <ExpoStatusBar
-        style="auto"
-        // backgroundColor={theme.color.bg.primary}
-      />
+      <ExpoStatusBar style="auto"/>
       <SLayoutContainer>
         <STopContainer>{props.top}</STopContainer>
         <SMainContainer>{props.main}</SMainContainer>
@@ -26,8 +23,6 @@ export const MainLayout: FC<PropsType> = (props) => {
 const STopContainer = styled.View`
   padding: ${(props) => `${props.theme.space[2]} ${props.theme.space[3]}`};
   background-color: ${(props) => props.theme.color.bg.primary};
-  flex-direction: row;
-  align-items: center;
 `;
 
 const SMainContainer = styled.View`

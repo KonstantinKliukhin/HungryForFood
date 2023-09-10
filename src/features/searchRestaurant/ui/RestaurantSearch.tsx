@@ -4,7 +4,7 @@ import { Searchbar } from "react-native-paper";
 import { useRestaurantsSearchLoading, useSearchRestaurant } from "../model";
 import { useRestaurantsSearchState } from "../model/restaurantsSearchState";
 
-type PropsType = Pick<ComponentProps<typeof Searchbar>, 'icon' | 'onIconPress'>;
+type PropsType = Pick<ComponentProps<typeof Searchbar>, 'icon' | 'onIconPress' | 'style'>;
 
 export const RestaurantSearch: FC<PropsType> = props => {
   const loading = useRestaurantsSearchLoading();
@@ -34,9 +34,13 @@ export const RestaurantSearch: FC<PropsType> = props => {
 
 const SSearchBar = styled(Searchbar).attrs({
   inputStyle: {
-    maxHeight: "100%"
+    maxHeight: "100%",
+    minWidth: '100%',
+    flex: 1,
   },
   style: {
+    minWidth: '100%',
+    flex: 1,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,

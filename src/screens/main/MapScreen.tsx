@@ -34,7 +34,7 @@ export const MapScreen: FC<BottomTabScreenProps<MainScreensParams, Routes.MAP>> 
   );
 };
 
-const SSearchContainer = styled.View`
+const SSearchContainer = styled.SafeAreaView`
   padding: ${(props) => props.theme.space[3]};
   width: 90%;
   left: 5%;
