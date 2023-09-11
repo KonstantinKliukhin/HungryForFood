@@ -7,6 +7,7 @@ export type MainScreensParamsType = {
   [Routes.RESTAURANTS_DETAILS]: {restaurant: Restaurant};
   [Routes.MAP]: undefined;
   [Routes.SETTINGS]: undefined;
+  [Routes.CAMERA]: undefined;
   [Routes.FAVOURITES]: undefined;
   [Routes.SETINGS_MAIN]: undefined;
 };

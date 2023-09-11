@@ -33,6 +33,14 @@
         "projectId": "ba1db5fe-a080-4b43-8db1-e30506ab8eb6"
       }
     },
-    "owner": "kliukhin_konstantin"
+    "owner": "kliukhin_konstantin",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+      ]
+    ]
   }
 }
